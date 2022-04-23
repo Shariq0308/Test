@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+ }
+ body{
+    overflow-x: hidden;         /** this is to hide the transition horizontally*/
+}
+
+/*********** Header setup *************/
+ header{
+    overflow-x: hidden;
+    z-index: 1;
+ }
+
+ h2{  
+    font-weight: normal; 
+ }
+
+ .headerContainer{
+    left: 0;
+    top: 1.0vh;
+    width: 100%;
+    height: 6%;
+    opacity: 1.0;
+    position: fixed;
+    background: white;
+    backdrop-filter: blur(40%);
+}
+
+.logo{
+    padding-top: 0.5%;
+    left:30%;
+    position: fixed;       /** to keep it on the top*/
+    letter-spacing: 4px;
+    font-weight: 300;   
+    font-family: 'Alata', sans-serif;
+    color: black;
+    font-size: large; 
+}
