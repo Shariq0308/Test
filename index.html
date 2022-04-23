@@ -6,13 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/slider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/js/slider.js"></script> 
 </head>
 
 <header>
-    <div class="headerContainer">
-        <div class="logo">
-            <h2>PRE-CONSTRUCTION <span style="font-weight: bold;">VIP LAUNCH</span> PHASE 1</h2>
-        </div>
+    <nav>
+        <div class="headerContainer">
+            <div class="logo">
+                <h2>PRE-CONSTRUCTION <span style="color: rgb(117, 10, 10);font-weight: bold;">VIP LAUNCH</span> PHASE 1</h2>
+            </div>
+             
+            <ul class="nav-links">
+                <img src="/Pictures/CrimsonLogo.jpg" alt="Crimson">
+                
+                <li><a href="#">&#129377; - BlatchFord Living</a></li>
+                <li><a href="#">&#128249; - Inner City Video</a></li>
+                <li> <a href="#">&#128506; - Location</a> </li>
+                <li><a href="#">&#128736; - Project Overview</a></li>
+                <li><a href="#">&#128655; - Amenities</a></li>
+                <li> <a href="#">&#128247; - Gallery</a> </li>
+                <h2><span style="color: rgb(117, 10, 10); font-weight: bold;font-size: larger;">Crimson</span> Cove Homes. Blatchford.</h2>  
+            </ul>  
+        
 
+            <div  class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div> 
+        </div> 
+    </nav>
+
+    <script src="/js/header.js"></script> 
+    
 </header>
+
+<body>
+    
+    <div class="wrapper-1">
+        <div id="slider">
+            <img id="1" src="/Pictures/slide-1.jpg">
+            <img id="2" src="/Pictures/slide-2.jpg">
+            <img id="3" src="/Pictures/slide-3.jpg">
+            <img id="4" src="/Pictures/slide-4.jpg">
+        </div>
+    
+        <a href="#" class="left-1" onClick="prev()">&#10094;</a>
+        <a href="#" class="right-1" onClick="next()">&#10095;</a>
+    </div>   
+ 
+</body>
+
 </html>

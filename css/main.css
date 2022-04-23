@@ -16,8 +16,25 @@
  h2{  
     font-weight: normal; 
  }
+ 
+.burger div{                /** Line create for Hamburger Menu*/
+    width: 40px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
 
- .headerContainer{
+.burger{
+    padding-top: 1.0%;
+    z-index: 2;
+    position: fixed;        /** to keep it on the top*/
+    right: 5%;
+    cursor: pointer;
+    text-align: right;
+}
+
+.headerContainer{
     left: 0;
     top: 1.0vh;
     width: 100%;
@@ -29,12 +46,101 @@
 }
 
 .logo{
-    padding-top: 0.5%;
-    left:30%;
+    padding-top: 1%;
+    left:5%;
     position: fixed;       /** to keep it on the top*/
     letter-spacing: 4px;
     font-weight: 300;   
     font-family: 'Alata', sans-serif;
     color: black;
-    font-size: large; 
+    font-size: larger; 
 }
+
+/* Menu Options */
+
+nav{                                /** total nav (Heading, Hamburger Menu, Truman Logo and Links */
+    padding-top: 5%;                /** to give a space on the top*/
+    justify-content: space-evenly;
+    height: 6%;
+    padding-right: 5%;
+    padding-left: 5%;
+    opacity: 0.8;
+}
+ 
+.nav-links{
+     z-index: 1;
+     opacity: 10;
+     position: fixed;
+     height: 150vh;                 /** Menu length when it opens on the page*/
+     top: 0vh;                      /** top 8vh  originally*/
+     background-color: black;
+     display: flex;
+     flex-direction: column;
+     align-items: left;
+     padding-top: 0%;
+     width: 30%;
+     transform: translateX(335%);        /** not visible **/
+     transition: transform 1s ease-in; 
+}
+ 
+.nav-links li{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;   
+    font-size: larger;
+    padding-top: 3%;   
+    padding-bottom: 5%;
+    padding-left: 10%;
+}
+
+nav li:hover{
+     cursor: pointer;
+     background-color: grey;
+}
+ 
+.nav-links h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+     padding-top: 15%;
+     padding-left: 10%;
+}
+
+.nav-links img{
+    padding-left: 2%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    background-position: center;
+    width: 100%;
+}
+.nav-links a{
+      
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links h2{ 
+    color: white;
+    font-size: x-large;
+}
+.nav-active{
+     transform: translateX(240%);        /** click this burger than the nav should get back to 0 **/    
+}
+
+.toggle .line1{ 
+    background-color: rgb(216, 94, 94);
+    transform:  rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+ 
+.toggle .line3{ 
+    background-color: rgb(216, 94, 94);
+    transform:  rotate(45deg) translate(-5px, -6px);
+}
+
+.burger:hover{
+    opacity: 0.6;
+}
+

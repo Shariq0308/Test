@@ -1,0 +1,53 @@
+/* Slider CSS */
+
+#slider{
+    z-index: -1;
+    position: relative;
+    display: flex;
+    Top:0px;
+    width: 1740px;
+    height: 830px;
+    overflow: hidden;       /*To make us see only 1 image when changing it to another image*/
+    margin: 30px auto;
+}
+
+#slider>img{
+    Top:00px;
+    width: 1740px;
+    height: 830px;
+    float: left;
+    display: none;
+}
+
+.wrapper-1 a{
+    overflow: hidden; 
+    position: relative;
+    display: flex;
+    top: -480px;
+    padding: 5px 10px;
+    background-color: black;
+    margin: 100px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 1s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    opacity: 0.5;
+   
+}
+
+/*To allign the left right button*/
+a.left-1{
+    
+    float: left;
+}
+
+a.right-1{
+    float: right;
+}
+
+.right-1:hover, .left-1:hover{
+    background-color: rgba(28, 27, 27, 0.9);
+    
+}
